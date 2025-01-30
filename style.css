@@ -1,36 +1,31 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
 
-/* Warna dasar */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f9f9f9;
     color: #333;
 }
 
-/* Navbar */
+
 .navbar {
-    background-color: #049e04 !important; /* Hijau tua */
+    background-color: #049e04 !important; 
 }
 
 .navbar-brand,
 .nav-link {
-    color: #fdd835 !important; /* Emas */
+    font-size: 1rem;
+    color: #fdd835 !important; 
 }
 
 .nav-link:hover {
-    color: #ffd700 !important; /* Emas cerah */
+    color: #ffd700 !important; 
 }
 
-/* ✅ Perbaikan Tombol Hamburger */
 .navbar-toggler {
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    border-color: white !important; /* Membuat tombol hamburger terlihat */
-    display: block !important; /* Pastikan tampil di layar kecil */
+    border-color: white !important; 
+    display: block !important; 
 }
 
-/* Hapus background image agar tidak konflik */
 .navbar-toggler-icon {
     background-image: none !important;
     display: flex;
@@ -40,24 +35,21 @@ body {
     height: 25px;
 }
 
-/* Garis-garis hamburger */
 .navbar-toggler-icon span {
     display: block;
     height: 3px;
     width: 100%;
-    background-color: #ffd700; /* Warna kuning */
+    background-color: #ffd700; 
     border-radius: 3px;
     transition: all 0.3s ease-in-out;
 }
 
-/* SEMBUNYIKAN tombol toggler di layar besar */
 @media (min-width: 992px) {
     .navbar-toggler {
         display: none !important;
     }
 }
 
-/* TAMPILKAN tombol toggler di layar kecil */
 @media (max-width: 991px) {
     .navbar-toggler {
         display: flex !important;
@@ -70,7 +62,6 @@ body {
 }
 
 
-/* Efek animasi saat navbar terbuka */
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
@@ -85,7 +76,6 @@ body {
 
 
 
-/* Hero Section */
 .hero-section {
     position: relative;
     height: 100vh;
@@ -97,7 +87,7 @@ body {
     overflow: hidden;
 }
 
-/* Background Image */
+
 .hero-section::before {
     content: "";
     position: absolute;
@@ -110,7 +100,7 @@ body {
     transition: filter 2s ease-in-out;
 }
 
-/* Overlay Gelap untuk Kontras Tulisan */
+
 .overlay {
     position: absolute;
     top: 0;
