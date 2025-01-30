@@ -23,6 +23,9 @@ body {
 
 /* ✅ Perbaikan Tombol Hamburger */
 .navbar-toggler {
+    position: absolute;
+    right: 15px;
+    top: 15px;
     border-color: white !important; /* Membuat tombol hamburger terlihat */
     display: block !important; /* Pastikan tampil di layar kecil */
 }
