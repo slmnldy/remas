@@ -1,0 +1,136 @@
+
+
+<!DOCTYPE html>
+<html lang="id">
+
+<div id="header"></div>
+
+<link rel="stylesheet" href="style.css">
+<!-- Hero Section -->
+<section id="home" class="hero-section">
+    <div class="hero-content">
+        <h1>Selamat Datang di</h1>
+        <h1>Masjid Baitul Halim</h1>
+        <p>"Meningkatkan Keimanan dan Ketakwaan Bersama Jamaah"</p>
+    </div>
+    <div class="overlay"></div>
+</section>
+
+<section class="py-5 bg-light" style="margin-top: -30px; position: relative; z-index: 10;">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-6">
+                <div class="info-box">
+                    <i class="fas fa-mosque fa-3x text-success"></i>
+                    <h3 class="mt-3">Tentang Kami</h3>
+                    <p>
+                    Masjid Baitul Halim merupakan pusat ibadah dan kegiatan keislaman di Perumahan Pondok Halim 2, yang berperan dalam membangun ukhuwah serta meningkatkan keimanan jamaah.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="info-box">
+                    <i class="fas fa-hands-helping fa-3x text-success"></i>
+                    <h3 class="mt-3">Support</h3>
+                    <p>
+                        Dukung program kegiatan keagamaan kami melalui infaq, sedekah, dan wakaf. Semoga Allah SWT membalas kebaikan Anda dengan keselamatan, rahmat, keberkahan dan pahala yang berlipat ganda.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Berita Masjid -->
+<section id="berita" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center">Berita dan Kegiatan Masjid</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/berita1.jpg" class="card-img-top" alt="Berita 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Bersih-Bersih Masjid</h5>
+                        <p class="card-text">Menjelang bulan Ramadhan, Takmir dan Remas melaksanakan kegiatan bersih-bersih masjid agar lebih nyaman digunakan selama ibadah.</p>
+                        <a href="berita1.html" class="btn btn-primary">Baca Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/berita2.jpg" class="card-img-top" alt="Berita 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Kajian Minggu Subuh</h5>
+                        <p class="card-text"> Program rutin yang diselenggarakan setiap Ahad pagi di Masjid Baitul Halim. Menghadirkan para ustadz untuk menyampaikan tausiyah Islami.</p>
+                        <a href="berita2.html" class="btn btn-primary">Baca Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/berita4.jpg" class="card-img-top" alt="Berita 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Lomba Muharram 2024</h5>
+                        <p class="card-text">Kegiatan lomba yang dilaksanakan dalam niat dan rangka memperingati dan memeriahkan Tahun Baru Kalender Islam 1 Muharram 1446 Hiriyah.</p>
+                        <a href="berita3.html" class="btn btn-primary">Baca Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="berita.html" class="back-btn">Selengkapnya</a>
+    </div>
+</section>
+
+<!-- Galeri Masjid -->
+<section id="galeri" class="py-5">
+    <div class="container text-center">
+        <h2>Galeri</h2>
+        <div class="row mt-4">
+            <div class="col-md-3">
+                <img src="assets/galeri1.jpg" class="img-fluid rounded" alt="Galeri 1">
+            </div>
+            <div class="col-md-3">
+                <img src="assets/galeri2.jpg" class="img-fluid rounded" alt="Galeri 2">
+            </div>
+            <div class="col-md-3">
+                <img src="assets/galeri3.jpg" class="img-fluid rounded" alt="Galeri 3">
+            </div>
+            <div class="col-md-3">
+                <img src="assets/galeri4.jpg" class="img-fluid rounded" alt="Galeri 4">
+            </div>
+        </div>
+        <a href="galeri.html" class="back-btn">Selengkapnya</a>
+    </div>
+</section>
+
+<div id="footer"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.addEventListener("scroll", function () {
+        const body = document.querySelector("body");
+        const welcomeText = document.querySelectorAll(".hero-content h1");
+
+        if (window.scrollY > 50) {
+            body.classList.add("scrolled");
+            welcomeText.forEach(text => {
+                text.style.transform = "scale(0.9)";
+            });
+        } else {
+            body.classList.remove("scrolled");
+            welcomeText.forEach(text => {
+                text.style.transform = "scale(1)";
+            });
+        }
+    });
+    document.addEventListener("DOMContentLoaded", function() {
+        let heroText = document.querySelector(".hero-content p");
+        heroText.style.color = "white";
+    });
+</script>
+
+<script src="include.js"></script>
+
+</body>
+</html>
