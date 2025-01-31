@@ -1,4 +1,3 @@
-// Fungsi untuk memuat file HTML ke dalam elemen dengan ID tertentu
 function loadHTML(id, url) {
     fetch(url)
         .then(response => response.text())
@@ -8,7 +7,6 @@ function loadHTML(id, url) {
         .catch(error => console.error(`Gagal memuat ${url}:`, error));
 }
 
-// Memuat header dan footer di semua halaman HTML
 document.addEventListener("DOMContentLoaded", function() {
     loadHTML("header", "header.html");
     loadHTML("footer", "footer.html");

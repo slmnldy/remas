@@ -21,6 +21,10 @@ body {
     color: #ffd700 !important; 
 }
 
+.navbar-nav {
+    gap: 10 !important;
+}
+
 .navbar-toggler {
     border-color: white !important; 
     display: block !important; 
@@ -44,13 +48,49 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 751px) {
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        flex-wrap: nowrap; 
+        min-width: 750px; 
+    }
+
+    .navbar-collapse {
+        display: flex !important;
+        justify-content: flex-end;
+        flex-grow: 1;
+        flex-wrap: nowrap;
+    }
+
     .navbar-toggler {
         display: none !important;
     }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        flex-wrap: nowrap; /* Pastikan menu tetap horizontal */
+    }
+
+    .navbar-nav .nav-item {
+        white-space: nowrap;
+    }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 750px) {
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        flex-wrap: nowrap; /* Cegah navbar pecah ke bawah */
+    }
+
     .navbar-toggler {
         display: flex !important;
         align-items: center;
@@ -58,8 +98,18 @@ body {
         border: none;
         background: none;
         outline: none;
+        position: static; /* Kembalikan ke posisi default saat layar kecil */
+    }
+
+    .navbar-collapse {
+        flex-direction: column;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
     }
 }
+
 
 
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon span:nth-child(1) {
