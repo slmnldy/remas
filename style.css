@@ -88,7 +88,7 @@ body {
         align-items: center;
         justify-content: space-between;
         padding: 10px 20px;
-        flex-wrap: nowrap; /* Cegah navbar pecah ke bawah */
+        flex-wrap: wrap;
     }
 
     .navbar-toggler {
@@ -102,11 +102,26 @@ body {
     }
 
     .navbar-collapse {
-        flex-direction: column;
+        position: relative;
+        width: 100%; /* Lebarnya menyesuaikan kolom putih */
+        background-color: white; /* Tetap di background putih */
+        border-radius: 8px; /* Tambah sudut membulat biar lebih rapi */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan agar lebih jelas */
+        text-align: center;
+        padding: 10px 0;
+        z-index: 1000; /* Pastikan tetap di atas */
     }
 
     .navbar-nav {
         flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
     }
 }
 
