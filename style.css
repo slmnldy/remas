@@ -9,6 +9,10 @@ body {
 
 .navbar {
     background-color: #049e04 !important; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 .navbar-brand,
