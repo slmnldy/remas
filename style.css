@@ -485,6 +485,17 @@ footer {
     border: 3px solid #ffd700;
 }
 
+@media (min-width : 751px) {
+    .qris img {
+        width: 350px;
+    }
+}
+@media (max-width : 750px) {
+    .qris img {
+        width: 200px;
+    }
+}
+
 /* Halaman Profil */
 .profil-container {
     background: #fff;
