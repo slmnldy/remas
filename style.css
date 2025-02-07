@@ -315,7 +315,61 @@ body.scrolled .hero-content h1 {
     color: #333;
 }
 
-/* Galeri */
+#koleksi-gambar img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+}
+#koleksi-gambar p {
+    font-size: 16px;
+    font-weight: 600;
+}
+#koleksi-gambar img {
+    height: 450px; 
+    object-fit: cover;
+}
+
+.carousel-item img {
+    transition: transform 10s ease-out;
+    transform: scale(1.1); 
+}
+
+.carousel-item.active img {
+    transform: scale(1); 
+}
+
+
+.carousel-overlay {
+    position: relative;
+}
+
+.carousel-overlay img {
+    height: 450px; 
+    object-fit: cover;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.carousel-caption h3 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 18px;
+}
+
 #galeri h2 {
     color: #049e04;
 }
@@ -351,7 +405,6 @@ th {
     color: white;
 }
 
-/* Footer Styling */
 footer {
     background-color: #049e04;
     color: white;
@@ -359,7 +412,6 @@ footer {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Container Utama Footer */
 .footer-container {
     display: flex;
     justify-content: space-between;
@@ -368,7 +420,6 @@ footer {
     flex-wrap: wrap;
 }
 
-/* Styling Tiap Section Footer */
 .footer-section {
     width: 30%;
     margin-bottom: 20px;
@@ -391,14 +442,12 @@ footer {
     color: #ffd700;
 }
 
-/* Styling Lokasi */
 .footer-section.lokasi iframe {
     width: 100%;
     height: 180px;
     border-radius: 10px;
 }
 
-/* Styling Sosial Media */
 .social-icons {
     display: flex;
     gap: 15px;
@@ -416,7 +465,6 @@ footer {
     transform: scale(1.2);
 }
 
-/* Footer Bottom */
 .footer-bottom {
     text-align: center;
     padding: 15px 0;
@@ -425,7 +473,6 @@ footer {
     color: #ffd700;
 }
 
-/* Responsive Design */
 @media screen and (max-width: 768px) {
     .footer-container {
         flex-direction: column;
@@ -446,7 +493,6 @@ footer {
     }
 }
 
-/* Halaman Donasi */
 .donasi-container {
     background: white;
     padding: 30px;
@@ -478,7 +524,6 @@ footer {
     color: #049e04;
 }
 
-/* QRIS */
 .qris img {
     width: 275px;
     border-radius: 10px;
