@@ -107,13 +107,13 @@ body {
 
     .navbar-collapse {
         position: relative;
-        width: 100%; /* Lebarnya menyesuaikan kolom putih */
-        background-color: white; /* Tetap di background putih */
-        border-radius: 8px; /* Tambah sudut membulat biar lebih rapi */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan agar lebih jelas */
+        width: 100%; 
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         text-align: center;
         padding: 10px 0;
-        z-index: 1000; /* Pastikan tetap di atas */
+        z-index: 1000;
     }
 
     .navbar-nav {
@@ -180,7 +180,6 @@ body {
     z-index: 1;
 }
 
-/* Hero Content */
 .hero-content {
     position: relative;
     z-index: 2;
@@ -199,7 +198,6 @@ body {
     transition: color 1s ease-in-out;
 }
 
-/* Efek blur saat scroll */
 body.scrolled .hero-section::before {
     filter: blur(8px);
 }
@@ -226,7 +224,6 @@ body.scrolled .hero-content h1 {
     margin-bottom: 15px;
 }
 
-/* Menyesuaikan posisi agar lebih dekat ke bagian hero */
 .bg-light {
     margin-top: -30px;
     position: relative;
@@ -234,7 +231,6 @@ body.scrolled .hero-content h1 {
 }
 
 
-/* Berita */
 #berita h2 {
     color: #049e04;
 }
@@ -263,7 +259,6 @@ body.scrolled .hero-content h1 {
     color: #333;
 }
 
-/* Halaman Berita */
 .container {
     max-width: 900px;
     margin: 50px auto;
@@ -297,7 +292,6 @@ body.scrolled .hero-content h1 {
     text-align: justify;
 }
 
-/* Tombol Kembali */
 .back-btn {
     display: inline-block;
     margin-top: 20px;
@@ -382,7 +376,6 @@ body.scrolled .hero-content h1 {
     border: 1px solid #ffd700;
 }
 
-/* Kontak */
 #kontak {
     background-color: #fdf5e6;
     color: #333;
@@ -541,7 +534,6 @@ footer {
     }
 }
 
-/* Halaman Profil */
 .profil-container {
     background: #fff;
     padding: 40px;
@@ -563,9 +555,8 @@ footer {
     line-height: 1.8;
 }
 
-/* Tabel Struktur Kepengurusan */
 .table-striped tbody tr:nth-of-type(odd) {
-    background-color: #fdf5e6; /* Warna krem */
+    background-color: #fdf5e6;
 }
 
 .table thead {
@@ -574,7 +565,6 @@ footer {
 }
 
 
-/* Responsive Design */
 @media screen and (max-width: 768px) {
     .profil-container {
         padding: 20px;
